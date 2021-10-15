@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reto 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+<!------------------------------------------------------------------------------------------------------------>
+<!----------------------------------------------Estilos------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------>
+    
+    
+    <style type="text/css">
+        body {
+            font-family: Georgia, "Times New Roman",
+                Times, serif;
+            color: purple;
+            background-color: #3da8da
+        }
+    
+        h1 {
+            font-family: Helvetica, Geneva, Arial,
+                SunSans-Regular, sans-serif
+        }
+    
+        ul.navbar {
+            position: absolute;
+            top: 2em;
+            left: 1em;
+            width: 5em
+        }
+    
+        h1 {
+            font-family: Helvetica, Geneva, Arial,
+                SunSans-Regular, sans-serif
+        }
+        
+    </style>
+</head>
+<body>
+<!------------------------------------------------------------------------------------------------------------>
+<!----------------------------------------------Clientes------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------>
+<p style="background:#3e51ff; color:white; font-weight:bold; padding:15px; 
+ border:3px solid #0c4ec9; margin-top:20px; margin-bottom:40px; text-align:center; 
+ font-size:22px; border-radius:8px;">Registro de Clientes</p>
+<div id="resultado"></div>
+<!--Campos de texto Clientes-->   
+<div>
+    <input type="number" id="id" placeholder="id"><br>
+    <input type="text" id="name" placeholder="name"><br>
+    <input type="text" id="email" placeholder="email"><br>
+    <input type="number" id="age" placeholder="age"><br><br>
+</div>
+<!--Botones Clientes-->   
+<button onclick="traerInformacion()">Consultar</button>
+<button onclick="guardarInformacion()">Guardar</button>
+<button onclick="editarInformacion()">Actualizar</button>
+
+<button onclick="obtenerItem()">Detalle del Cliente</button>
+
+<a href="/detallecliente.html"></a>
+<!------------------------------------------------------------------------------------------------------------>
+<!----------------------------------------------Mensaje------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------>
+<p style="background:#2724d6; color:white; font-weight:bold; padding:15px; 
+ border:3px solid #1142ad; margin-top:40px; margin-bottom:20px; text-align:center; 
+ font-size:22px; border-radius:6px;">Registro de Mensajes</p>
+<div id="resultadoM"></div>
+<!--Campos de texto Mensajes-->   
+<div>
+    <input type="number" id="idMensaje" placeholder="id"><br>
+    <input type="text" id="messagetext" placeholder="messagetext"><br><br>
+</div>
+<!--Botones Mensaje--> 
+<button onclick="traerInformacionM()">Consultar</button>
+<button onclick="guardarInformacionM()">Guardar</button>
+<button onclick="editarInformacionM()">Actualizar</button>
+
+<button onclick="obtenerItemM()">Detalle del Mensaje--</button>
+
+<!------------------------------------------------------------------------------------------------------------>
+<!----------------------------------------------Salones------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------>
+<p style="background:#4613d3; color:white; font-weight:bold; padding:15px; 
+ border:3px solid #2819b3; margin-top:40px; margin-bottom:40px; text-align:center; 
+ font-size:22px; border-radius:6px;">Registro de Salones</p>
+<div id="resultadoS"></div>
+<!--Campos de texto Salones-->   
+<div>
+    <input type="number" id="idSalones" placeholder="id"><br>
+    <input type="text" id="owner" placeholder="owner"><br>
+    <input type="number" id="capacity" placeholder="capacity"><br>
+    <input type="number" id="category_id" placeholder="category_id"><br>
+    <input type="text" id="nameSalones" placeholder="name"><br><br>
+</div>
+<!--Botones Salones-->  
+<button onclick="traerInformacionS()">Consultar</button>
+<button onclick="guardarInformacionS()">Guardar</button>
+<button onclick="editarInformacionS()">Actualizar</button>
+<button onclick="obtenerItemS()">Detalle del Salon</button>
+
+</body>
+</html>
